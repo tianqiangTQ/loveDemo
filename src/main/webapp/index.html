@@ -22,7 +22,7 @@
 </style>
 </head>
 <body>
-<audio autoplay="autoplay">
+<audio id="bg-music" loop="loop">
   <source src="renxi.mp3" type="audio/mpeg" />
 </audio>
 <div id="main">
@@ -51,8 +51,6 @@
     <canvas id="canvas" width="1100" height="680"></canvas>
   </div>
 </div>
-<script>
-    </script>
 <script>
     (function(){
         var canvas = $('#canvas');
@@ -107,6 +105,8 @@
         var hold = 1;
 
         canvas.click(function(e) {
+            var audio = $('#bg-music')[0];
+            audio.play();
             var offset = canvas.offset(), x, y;
             x = e.pageX - offset.left;
             y = e.pageY - offset.top;
