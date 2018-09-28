@@ -33,6 +33,9 @@
 <audio id="bg-music" loop="loop">
     <source src="renxi.mp3" type="audio/mpeg"/>
 </audio>
+<div id="not_support" class="center">
+    为了不影响体验，请横屏浏览
+</div>
 <div id="main">
     <div id="error">本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌(Chrome)或者火狐(Firefox)浏览器，或者其他浏览器的最新版本。</div>
     <div id="wrap">
@@ -61,33 +64,20 @@
 </div>
 
 <script>
-    // 利用 CSS3 旋转 对根容器逆时针旋转 90 度
-    var detectOrient = function() {
-        var width = document.documentElement.clientWidth,
-            height =  document.documentElement.clientHeight,
-            $wrapper =  document.getElementById("main"),
-            style = "";
-        if( width >= height ){ // 横屏
-            style += "width:" + width + "px;";  // 注意旋转后的宽高切换
-            style += "height:" + height + "px;";
-            style += "-webkit-transform: rotate(0); transform: rotate(0);";
-            style += "-webkit-transform-origin: 0 0;";
-            style += "transform-origin: 0 0;";
-        }
-        else{ // 竖屏
-            style += "width:" + height + "px;";
-            style += "height:" + width + "px;";
-            style += "-webkit-transform: rotate(90deg); transform: rotate(90deg);";
-            // 注意旋转中点的处理
-            style += "-webkit-transform-origin: " + width / 2 + "px " + width / 2 + "px;";
-            style += "transform-origin: " + width / 2 + "px " + width / 2 + "px;";
-        }
-        $wrapper.style.cssText = style;
-    }
-    window.onresize = detectOrient;
-    detectOrient();
 
     (function () {
+        var detectOrient = function() {
+            var width = document.documentElement.clientWidth,
+                height =  document.documentElement.clientHeight;
+            if( width >= height ){ // 横屏
+            }
+            else{ // 竖屏
+                $('#main').hide()
+                $('#not_support').show()
+            }
+        }
+        detectOrient()
+        window.onresize = detectOrient;
 
         var canvas = $('#canvas');
         if (!canvas[0].getContext) {
