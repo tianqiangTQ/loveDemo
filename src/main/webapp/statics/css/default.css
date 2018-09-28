@@ -14,7 +14,8 @@
 #loveHeart {
     float: left;
     width: 670px;
-    height: 625px
+    height: 625px;
+    margin-top: 100px;
 }
 
 #garden {
@@ -33,7 +34,7 @@
     font-family: "sans-serif";
     width: 500px;
     font-size: 24px;
-    color: #666
+    color: #666;
 }
 
 #messages {
@@ -70,7 +71,7 @@
     height: 400px;
     color: #333;
     font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif";
-    font-size: 12px
+    font-size: 18px
 }
 
 #code .string {
