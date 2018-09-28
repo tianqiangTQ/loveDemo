@@ -31,7 +31,7 @@
 </head>
 <body>
 <audio id="bg-music" loop="loop">
-    <source src="renxi.mp3" type="audio/mpeg"/>
+    <source src="renxi/renxi.mp3" type="audio/mpeg"/>
 </audio>
 <div id="not_support" class="center">
     为了不影响体验，请横屏浏览
