@@ -14,14 +14,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Log4j
 public class IndexController {
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(value = "/tree", method = RequestMethod.GET)
     public String index(ModelMap model) {
-        return "index";
+        return "tree";
     }
 
     @RequestMapping(value = "/heart", method = RequestMethod.GET)
     public String welcome(ModelMap model) {
-        return "demo2";
+        return "heart";
     }
 
 }
