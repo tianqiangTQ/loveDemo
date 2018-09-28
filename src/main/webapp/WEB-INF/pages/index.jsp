@@ -7,7 +7,7 @@
     <meta http-equiv="Cache-Control" content="no-siteapp">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="baby">
-    <link rel="icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../favicon.ico" mce_href="favicon.ico" type="image/x-icon">
 
     <title>love</title>
     <link type="text/css" rel="stylesheet" href="renxi/default.css?t=20180928">
@@ -66,18 +66,7 @@
 <script>
 
     (function () {
-        var detectOrient = function() {
-            var width = document.documentElement.clientWidth,
-                height =  document.documentElement.clientHeight;
-            if( width >= height ){ // 横屏
-            }
-            else{ // 竖屏
-                $('#main').hide()
-                $('#not_support').show()
-            }
-        }
-        detectOrient()
-        window.onresize = detectOrient;
+
 
         var canvas = $('#canvas');
         if (!canvas[0].getContext) {
