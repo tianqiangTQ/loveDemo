@@ -7,7 +7,7 @@
     <meta http-equiv="Cache-Control" content="no-siteapp">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="baby">
-    <link rel="icon" href="../../favicon.ico" mce_href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
     <title>love</title>
     <link type="text/css" rel="stylesheet" href="renxi/default.css?t=20180928">
